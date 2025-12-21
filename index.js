@@ -28,6 +28,11 @@ connectToMongoDb('mongodb://127.0.0.1:27017/urlShortener')
         console.log(err);
     })
 
+const limiter = ratelimit({
+    windowMs: 15 * 60 * 1000,
+    max: 100,
+})
+
 app.get('/test' , async (req,res) => {
     const allUrls = await url.find({});
     return res.render('home')
