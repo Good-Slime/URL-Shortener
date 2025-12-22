@@ -18,6 +18,10 @@ const { handleGetAnalytics } = require("./controllers/url.js");
 const app = express();
 const port = process.env.PORT || 8000;
 
+app.use((req, res, next) => {
+  res.locals.BaseUrl = process.env.BaseUrl;
+  next();
+});
 
 app.set("view engine", "ejs");
 app.set('views',path.resolve('./views'))
