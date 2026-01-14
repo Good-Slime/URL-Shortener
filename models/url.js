@@ -5,7 +5,7 @@ const urlSchema = new mongoose.Schema(
     shortId: {
       type: String,
       required: true,
-      unique: true,   // 🔥 collision protection
+      unique: true, 
       index: true
     },
 
@@ -13,7 +13,6 @@ const urlSchema = new mongoose.Schema(
       type: String,
       required: true
     },
-
     visitHistory: [
       {
         timestamp: {
@@ -24,7 +23,11 @@ const urlSchema = new mongoose.Schema(
 
     expiresAt: {
       type: Date     
-    }
+    },
+    createdBy :{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "users",
+    },
   },
   {
     timestamps: true 

@@ -20,7 +20,8 @@ async function handleGenerateNewShortURL(req, res) {
         shortId: shortId,
         redirectUrl: body.url,
         visitedHistory: [],
-        expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000)
+        expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+        createdBy: req.user._id,
       });
       return res.render("home", {
         id: shortId
