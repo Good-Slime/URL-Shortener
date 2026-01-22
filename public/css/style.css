@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif
+}
+
+body {
+    background: #fff;
+    color: #111
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    border-bottom: 1px solid #ddd
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center
+}
+
+.container h1 {
+    margin-bottom: 30px
+}
+
+.url-form {
+    text-align: left;
+    margin-bottom: 20px
+}
+
+.url-form label {
+    font-weight: 700
+}
+
+.url-form input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc
+}
+
+.url-form button {
+    width: 100%;
+    padding: 14px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer
+}
+
+.url-form button:hover {
+    background: #000
+}
+
+.generated {
+    margin: 15px 0
+}
+
+.base-url {
+    color: #666;
+    margin-bottom: 40px
+}
+
+.history {
+    text-align: left
+}
+
+.history h2 {
+    margin-bottom: 15px
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+thead {
+    background: #f5f5f5
+}
+
+th,
+td {
+    padding: 14px;
+    border-bottom: 1px solid #ddd
+}
+
+.link {
+    color: #555;
+    word-break: break-all
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 100px auto;
+    text-align: center
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 14px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer
+}

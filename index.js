@@ -11,6 +11,7 @@ const rateLimit = require("express-rate-limit");
 require("dotenv").config()
 const { handleGetAnalytics } = require("./controllers/url.js");
 
+
 const urlRoute = require('./routes/url.js');
 const staticRoute=require('./routes/staticRouter.js')
 const userRoute = require('./routes/user.js')
@@ -40,6 +41,8 @@ const limiter = rateLimit({
     max: 100,
 })
 
+
+app.use(express.static("public"))
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 app.use(cookieParser());
