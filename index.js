@@ -37,9 +37,13 @@ app.set("view engine", "ejs");
 app.set('views',path.resolve('./views'))
 
 const limiter = rateLimit({
-    windowMs: 15 * 60 * 1000,
-    max: 100,
-})
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: "Too many requests, please try again later."
+});
+
 
 
 app.use(express.static("public"))
