@@ -15,11 +15,11 @@ Designed with a **clean Controller → Service → Repository architecture** for
 
 ### Dashboard & URL History
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
 
 ### Sign Up Page
 
-![SignUp](screenshots/signup.png)
+![SignUp](screenshots/Signup.png)
 
 ---
 
