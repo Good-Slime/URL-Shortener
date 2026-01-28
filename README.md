@@ -19,7 +19,7 @@ Designed with a **clean Controller → Service → Repository architecture** for
 
 ### Sign Up Page
 
-![SignUp](screenshots/Signup.png)
+![SignUp](screenshots/SignUp.png)
 
 ---
 
